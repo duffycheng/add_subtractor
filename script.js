@@ -42,8 +42,8 @@
         getValue: function(actionDOM){
         	//populate variables in the object
             var node = this.node;
-            this.caculateObj.x = parseInt(node.input_x.val(), 10);
-            this.caculateObj.y = parseInt(node.input_y.val(), 10);
+            this.caculateObj.x = node.input_x.val();
+            this.caculateObj.y = node.input_y.val();
             this.caculateObj.action = actionDOM.attr("class");
             this.caculateObj.symbol = actionDOM.data("symbol");
         },
@@ -64,7 +64,11 @@
             if(num === null || num === ""){
                 input.siblings(".warning").text("Please Enter a Number");
                 return false;
-            }else if(isNaN(num)){
+            }
+
+            var number = parseInt(num, 10);
+
+            if(isNaN(number)){
                 input.siblings(".warning").text("Are you sure this is a NUMBER?");
                 return false;
             }else{
