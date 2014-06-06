@@ -59,7 +59,7 @@
 		width:120px;
 		line-height: 25px;
 	}
-	a:visited{
+	a,a:visited{
 		color:#000;
 	}
 	.message{
