@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add/Subtractor</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="caculator">
+		<header>
+			<h1>Calculator</h1>
+		</header>
+		<div class="caculate">
+			<div>
+				<span>X = </span><input id="number_x" type="text" name="" value="" placeholder="Enter an integer"> <span class="warning"></span><br>
+			</div>
+			<div>
+				<span>Y = </span><input id="number_y" type="text" name="" value="" placeholder="Enter an integer"> <span class="warning"></span>
+			</div>			
+		</div>
+		<div class="actions">
+			<a href="#" class="add" data-symbol="+">+</a>
+			<a href="#" class="subtract" data-symbol="-">-</a>
+			<a href="#" class="multiple" data-symbol="x">x</a>
+			<a href="#" class="divide" data-symbol="/">/</a>
+		</div>
+		<div class="delete-actions">
+			<a href="#" data-label="x" data-aciton="delete">Clear X Value</a>
+			<a href="#" data-label="y" data-aciton="delete">Clear Y Value</a>
+		</div>
+		<div class="message"></div>
+	</section>
+	<script type="text/javascript" src="jquery-1.10.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
